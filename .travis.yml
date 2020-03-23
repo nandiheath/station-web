@@ -17,7 +17,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t nandiheath/station_web .
+  - docker build -t nandiheath/station-web .
 
 # skip test
 script: 'true'
