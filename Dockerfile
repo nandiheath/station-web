@@ -2,7 +2,7 @@ FROM haskell:8
 
 RUN apt-get update && apt-get install -y postgresql libpq-dev
 ENV PORT 8000
-ENV DATABASE_URL psql://postgres:postgres@postgres:5432/
+ENV DATABASE_URL "host=peertube_postgres_1 user=sss password=sss dbname=sss"
 ENV LOG true
 
 WORKDIR /opt
